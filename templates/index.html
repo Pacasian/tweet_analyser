@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.button4 {
+			  background-color: #4CAF50; /* Green */
+			  border: none;
+			  color: white;
+
+			  padding: 15px 32px;
+			  text-align: left;
+			  font-style: bold;
+			  text-decoration: none;
+			  border-radius: 8px;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+			#button45 {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #0336FF;
+			   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+			}
+			.button41 {
+			  background-color: #4CAF50; /* Green */
+			  border: none;
+			  color: white;
+
+			  padding: 15px 32px;
+			  text-align: center;
+			  
+			  text-decoration: none;
+			  border-radius: 8px;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+			#button415 {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #0336FF;
+			   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+			}
+	</style>
+</head>
+<body style = "background : url(https://about.twitter.com/content/dam/about-twitter/company/brand-resources/en_us/OTB_Company_Blue.png.img.fullhd.medium.png)">
+<center>
+<font size="5">
+<h1>TWITTER SENTIMENT ANALYSIS</h1>
+</font>
+<form action="{{ url_for('addRegion') }}" method="post">
+	<font size="5">
+		<br>
+		<br>
+    ENTER KEYWORD:  <input type="text" style="font-size:14pt;" name="projectFilePath">
+    	<br>
+    	<br>
+		<br>
+		<br>
+    ENTER THE NUMBER OF TWEETS TO MINE: <input type="text" style="font-size:14pt;" name="projectFilePath1"><br>
+    <br>
+</font>
+<br>
+<br>
+<br>
+    <input type="submit" class="button4" id="button45" value="Submit">
+</form>
+<div>
+<textarea class="button4" id="button45" style="resize: none; font-size: 13px; height: 250px; width: 310px; margin-top: 20px; padding:5px;" rows="10" cols="50" readonly >{{resultes}}</textarea>
+<textarea class="button41" id="button415" style="resize: none; font-size: 15px; height: 50px; width: 180px; margin-top: 20px; padding:5px;" rows="5" cols="50" readonly >{{finalreview}}</textarea>
+<img src="">
+</div>
+<center>
+</body>
+</html>
